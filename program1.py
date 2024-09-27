@@ -46,7 +46,7 @@ class Solution(object):
         stack = [] # create an empty stack to store opening brackets
         for c in s: # loop through each character in the string
             if c in '([{': # if the character is an opening bracket
-                stack.append(c) # push it onto the stack
+                stack.append(c) 
             else: 
                 if not stack or \
                     (c == ')' and stack[-1] != '(') or \

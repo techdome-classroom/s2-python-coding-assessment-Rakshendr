@@ -1,7 +1,6 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
-        
-        roman_map = {
+        m = {
             'I': 1,
             'V': 5,
             'X': 10,
@@ -11,17 +10,15 @@ class Solution:
             'M': 1000
         }
         
-        total = 0
-        n = len(s)
+        ans = 0
         
-        for i in range(n):
-            
-            if i < n - 1 and roman_map[s[i]] < roman_map[s[i + 1]]:
-                total -= roman_map[s[i]]  
+        for i in range(len(s)):
+            if i < len(s) - 1 and m[s[i]] < m[s[i+1]]:
+                ans -= m[s[i]]
             else:
-                total += roman_map[s[i]]  
-                
-        return total
+                ans += m[s[i]]
+        
+        return ans
 
 
 import unittest

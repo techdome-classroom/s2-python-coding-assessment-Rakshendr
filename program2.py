@@ -52,7 +52,7 @@ class TestRomanToInt(unittest.TestCase):
     def test_empty_string(self):
         self.assertEqual(self.solution.romanToInt(""), 0)
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     unittest.main(argv=['first-arg-is-ignored'], exit=False)
 
 

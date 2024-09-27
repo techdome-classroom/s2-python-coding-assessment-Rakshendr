@@ -44,7 +44,7 @@ if __name__ == '_main_':
 class Solution(object):
     def isValid(self, s):
         stack = [] # create an empty stack to store opening brackets
-        for c in s: # loop through each character in the string
+        for c in s: 
             if c in '([{': 
                 stack.append(c) 
             else: 

@@ -1,5 +1,15 @@
 class Solution(object):
     def isValid(self, s: str) -> bool:
+        """
+        :type s: str
+        :rtype: bool
+        """
+        pass
+
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+        
         bracket_map = {')': '(', '}': '{', ']': '['}
     
         stack = []
@@ -38,11 +48,6 @@ class TestSolution(unittest.TestCase):
 
 if _name_ == '_main_':
     unittest.main(argv=['first-arg-is-ignored'], exit=False)
-
-
-
-        
-        
 
 
 

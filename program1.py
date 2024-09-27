@@ -41,8 +41,6 @@ if _name_ == '_main_':
         pass
 
 
-class Solution:
-    def isValid(self, s: str) -> bool:
         
         
 

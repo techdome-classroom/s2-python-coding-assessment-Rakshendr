@@ -47,7 +47,7 @@ class Solution(object):
         for c in s: # loop through each character in the string
             if c in '([{': # if the character is an opening bracket
                 stack.append(c) # push it onto the stack
-            else: # if the character is a closing bracket
+            else: 
                 if not stack or \
                     (c == ')' and stack[-1] != '(') or \
                     (c == '}' and stack[-1] != '{') or \
